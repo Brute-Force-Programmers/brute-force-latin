@@ -4,7 +4,7 @@ function HomePage() {
     return (
         <div>
             <h1>Homepage</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dolores ipsa architecto? Hic, omnis? Eum reiciendis porro aliquid neque quis!</p>
+            <p> This website is to be used in conjunction with the dowling method. Utilizing the wheelock's latin grammar table.</p>
         </div>
     )
 }
