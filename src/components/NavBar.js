@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -7,33 +7,41 @@ import {
   Nav,
   NavItem,
   NavLink,
-  NavbarText
-} from 'reactstrap';
+  NavbarText,
+} from "reactstrap";
 
-const Example = (props) => {
+const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <>
+    <> 
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">Brute Force Latin</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/about/">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink href="/contact/">Contact</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/resources/">Resources</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/learn/">Learn</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText><em>Sapere aude</em></NavbarText>
+          <NavbarText>
+            <em>Sapere aude</em>
+          </NavbarText>
         </Collapse>
       </Navbar>
     </>
   );
-}
+};
 
-export default Example;
+export default NavBar;
