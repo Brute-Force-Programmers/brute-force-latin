@@ -36,7 +36,7 @@ const NavBar = (props) => {
             </NavItem>
           </Nav>
           <NavbarText>
-            <em>Sapere aude</em>
+            Sapere aude
           </NavbarText>
         </Collapse>
       </Navbar>
