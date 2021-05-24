@@ -14,9 +14,7 @@ const About = () => {
         translating as you go versus a student of a modern language can learn to
         read in much the same capacity as their native tongue. Essentially it
         boils down to memorizing all of the grammar tables in the back of{" "}
-        <em>Wheelock's latin</em>. This web application is meant to be an update
-        to Jonathan Aquino's website{" "}
-        <a href="http://www.jonathanaquino.com/latin/">Dowlings Wheel.</a>
+        <em>Wheelock's latin</em>.
       </p>
     </div>
   );
