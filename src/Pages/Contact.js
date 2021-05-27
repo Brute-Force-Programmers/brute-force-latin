@@ -5,7 +5,7 @@ const Contact = () => {
         <div>
             <NavBar/>
             <h1>Contact Me:</h1>
-            
+            <a href="https://github.com/g-strick"> on github</a>
         </div>
     )
 }
