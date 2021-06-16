@@ -1,0 +1,44 @@
+// === Verbs, Indicative Passive ===
+
+// --- Present ---
+// Praise: laudor laudaris laudatur laudamur laudamini laudantur
+// Remind: moneor moneris monetur monemur monemini monentur
+// Lead: ducor duceris ducitur ducimur ducimini ducuntur
+// Hear: audior audiris auditur audimur audimini audiuntur
+// Take: capior caperis capitur capimur capimini capiuntur
+
+// --- Imperfect ---
+// Praise: laudabar laudabaris laudabatur laudabamur laudabamini laudabantur
+// Remind: monebar monebaris monebatur monebamur monebamini monebantur
+// Lead: ducebar ducebaris ducebatur ducebamur ducebamini ducebantur
+// Hear: audiebar audiebaris audiebatur audiebamur audiebamini audiebantur
+// Take: capiebar capiebaris capiebatur capiebamur capiebamini capiebantur
+
+// --- Future ---
+// Praise: laudabor laudaberis laudabitur laudabimur laudabimini laudabuntur
+// Remind: monebor moneberis monebitur monebimur monebimini monebuntur
+// Lead: ducar duceris ducetur ducemur ducemini ducentur
+// Hear: audiar audieris audietur audiemur audiemini audientur
+// Take: capiar capieris capietur capiemur capiemini capientur
+
+// --- Perfect ---
+// Praise: laudatus sum laudatus es laudatus est laudati sumus laudati estis laudati sunt
+// Remind: monitus sum monitus es monitus est moniti sumus moniti estis moniti sunt
+// Lead: ductus sum ductus es ductus est ducti sumus ducti estis ducti sunt
+// Hear: auditus sum auditus es auditus est auditi sumus auditi estis auditi sunt
+// Take: captus sum captus es captus est capti sumus capti estis capti sunt
+
+// --- Pluperfect ---
+// Praise: laudatus eram laudatus eras laudatus erat laudati eramus laudati eratis laudati erant
+// Remind: monitus eram monitus eras monitus erat moniti eramus moniti eratis moniti erant
+// Lead: ductus eram ductus eras ductus erat ducti eramus ducti eratis ducti erant
+// Hear: auditus eram auditus eras auditus erat auditi eramus auditi eratis auditi erant
+// Take: captus eram captus eras captus erat capti eramus capti eratis capti erant
+
+// --- Future Perfect ---
+// Praise: laudatus ero laudatus eris laudatus erit laudati erimus laudati eritis laudati erunt
+// Remind: monitus ero monitus eris monitus erit moniti erimus moniti eritis moniti erunt
+// Lead: ductus ero ductus eris ductus erit ducti erimus ducti eritis ducti erunt
+// Hear: auditus ero auditus eris auditus erit auditi erimus auditi eritis auditi erunt
+// Take: captus ero captus eris captus erit capti erimus capti eritis capti erunt
+
