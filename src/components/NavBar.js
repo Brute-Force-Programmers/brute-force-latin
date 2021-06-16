@@ -16,7 +16,7 @@ const NavBar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <> 
+    <>
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">Brute Force Latin</NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -26,18 +26,16 @@ const NavBar = (props) => {
               <NavLink href="/about/">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/contact/">Contact</NavLink>
+              <NavLink href="/learn/">Learn</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/resources/">Resources</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/learn/">Learn</NavLink>
+              <NavLink href="/contact/">Contact</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>
-            Sapere aude
-          </NavbarText>
+          <NavbarText>Sapere aude</NavbarText>
         </Collapse>
       </Navbar>
     </>
