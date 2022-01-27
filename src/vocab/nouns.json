@@ -10,11 +10,13 @@
         "declension": "1",
         "gender": "feminine",
         "words": ["portae", "portarum", "portis", "portas", "portis"]
+      },
+      "Friend": {
+        "declension": "2",
+        "gender": "Masculine",
+        "words": ["amicus", "amici", "amico", "amicum", "amico"]
       }
     }
   }
 }
-
-
-
 
