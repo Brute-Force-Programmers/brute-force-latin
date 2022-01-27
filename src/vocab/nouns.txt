@@ -1,4 +1,10 @@
-=== Nouns ===
+
+english word
+gender
+declension
+nouns vs adjec vs vebrisact vs etc
+
+
 
 --- First Declension ---
 Gate (feminine): porta portae portae portam porta

@@ -1,0 +1,20 @@
+{
+  "Vocab": {
+    "Nouns": {
+      "Gate": {
+        "declension": "1",
+        "gender": "feminine",
+        "words": ["porta", "portae", "portae", "portam", "porta"]
+      },
+      "Gates": {
+        "declension": "1",
+        "gender": "feminine",
+        "words": ["portae", "portarum", "portis", "portas", "portis"]
+      }
+    }
+  }
+}
+
+
+
+
