@@ -1,29 +1,63 @@
-// === Adjectives ===
+{
+	"Adjectives": {
+		"Large": {
+			"declension": "1/2",
+			"masculine": {
+				"singular": ["magnus", "magni", "magno", "magnum", "magno"],
+				"plural": ["magni", "magnorum", "magnis", "magnos", "magnis"],
+			},
+			"feminine": {
+				"singular": ["manga", "magnae", "magnae", "magnam", "magna"],
+				"plural": ["magnae", "magnarum", "magnis", "magnas", "magnis"]
+			},
+			"neuter": {
+				"singular": ["magnum", "magni", "magno", "magnum", "magno"],
+				"plural": ["magna", "magnorum", "magnis", "magna", "magnis"]
+			}
+		},
+		"Free": {
+			"declension": "1/2",
+			"masculine": {
+				"singular": ["liber", "liberi", "libero", "liberum", "libero"]
+			},
+			"feminine": {
+				"singular": ["libera", "liberae", "liberae", "liberam", "libera"]
+			},
+			"neuter": ["liberum", "liberi", "libero", "liberum", "libero"]
+			}
+		},
+		"Beautiful": {
+			"declension": "1/2",
+			"masculine": {
+				"singular": ["pulcher", "pulchri", "pulchro", "pulchrum", "pulchro"]
+			},
+			"feminine": {
+				"singular": ["pulchra", "pulchrae", "pulchrae", "pulchram", "pulchra"]
+			},
+			"neuter": {
+				"singular": ["pulchrum", "pulchri", "pulchro", "pulchrum", "pulchro"]
+			}
+		},
+		"Brave": {
+			"declension": "3",
+			"masculine": {
+				"singular": ["fortis", "fortis", "forti", "fortem", "forti"],
+				"plural": ["fortes", "fortium", "fortibus", "fortes", "fortibus"]
+			},
+			"feminine": {
+				"singular": ["fortis", "fortis", "forti", "fortem", "forti"],
+				"plural": ["fortes", "fortium", "fortibus", "fortes", "fortibus"]
+			},
+			"neuter": {
+				"singular": ["forte", "fortis", "forti", "forte", "forti"],
+				"plural": ["fortia", "fortium", "fortibus", "fortia", "fortibus"]
+			}
+		}
+	}
 
-// --- First and Second Declensions ---
-// Large (masculine, singular): magnus magni magno magnum magno
-// Large (masculine, plural): magni magnorum magnis magnos magnis
-// Large (feminine, singular): magna magnae magnae magnam magna
-// Large (feminine, plural): magnae magnarum magnis magnas magnis
-// Large (neuter, singular): magnum magni magno magnum magno
-// Large (neuter, plural): magna magnorum magnis magna magnis
+}
 
-// Free (masculine, singular): liber liberi libero liberum libero
-// Free (feminine, singular): libera liberae liberae liberam libera
-// Free (neuter, singular): liberum liberi libero liberum libero
-
-// Beautiful (masculine, singular): pulcher pulchri pulchro pulchrum pulchro
-// Beautiful (feminine, singular): pulchra pulchrae pulchrae pulchram pulchra
-// Beautiful (neuter, singular): pulchrum pulchri pulchro pulchrum pulchro
-
-// --- Third Declension ---
-// [Two endings]
-// Brave (masculine, singular): fortis fortis forti fortem forti
-// Brave (masculine, plural): fortes fortium fortibus fortes fortibus
-// Brave (feminine, singular): fortis fortis forti fortem forti
-// Brave (feminine, plural): fortes fortium fortibus fortes fortibus
-// Brave (neuter, singular): forte fortis forti forte forti
-// Brave (neuter, plural): fortia fortium fortibus fortia fortibus
+/ === Adjectives ===
 
 // [Three endings]
 // Keen (masculine, singular): acer acris acri acrem acri
