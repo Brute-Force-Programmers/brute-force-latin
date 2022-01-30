@@ -15,6 +15,71 @@
         "declension": "2",
         "gender": "Masculine",
         "words": ["amicus", "amici", "amico", "amicum", "amico"]
+      },
+      "Friends": {
+        "declension": "2",
+        "gender": "masculine",
+        "words": ["amici", "amicorum", "amicis", "amicos", "amicis"]
+      },
+      "Boy": {
+        "declension": "2",
+        "gender": "masculine",
+        "words": ["puer", "pueri", "puero", "puerum", "puero"]
+      },
+      "Boys": {
+        "declension": "2",
+        "gender": "masculine",
+        "words": ["pueri", "puerorum", "pueris", "pueros", "pueris"]
+      },
+      "Field": {
+        "declension": "2",
+        "gender": "masculine",
+        "words": ["ager", "agri", "agro", "agrum", "agro"]
+      },
+      "Fields": {
+        "declension": "2",
+        "gender": "masculine",
+        "words": ["agri", "agrorum", "agris", "agros", "agris"]
+      },
+      "Gift": {
+        "declension": "2",
+        "gender": "neuter",
+        "words": ["donum", "doni", "dono", "donum", "dono"]
+      },
+      "Gifts": {
+        "declension": "2",
+        "gender": "neuter",
+        "words": ["dona", "donorum", "donis", "dona", "donis"]
+      },
+      "King": {
+        "declension": "2",
+        "gender": "",
+        "words": ["rex", "regis", "regi", "regem", "rege"]
+      },
+      "Kings": {
+        "declension": "2",
+        "gender": "",
+        "words": ["reges", "regum", "regibus", "reges", "regibus"]
+      },
+      "Body": {
+        "declension": "2",
+        "gender": "",
+        "words": ["corpus", "corporis", "corpori", "corpus", "corpore"]
+      },
+      "Bodies": {
+        "declension": "2",
+        "gender": "",
+        "words": ["corpora", "corporum", "corporibus", "corpora", "corporibus"]
+      },
+      "Citizen": {
+        "declension": "2",
+        "gender": "",
+        "words": ["civis", "civis", "civi", "civem", "cive"]
+      },
+      "Citizens": {
+        "declension": "2",
+        "gender": "",
+        "words": ["cives", "civium", "civibus", "cives", "civibus"]
       }
     }
   }
