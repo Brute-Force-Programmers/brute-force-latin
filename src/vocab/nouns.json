@@ -13,8 +13,123 @@
       },
       "Friend": {
         "declension": "2",
-        "gender": "Masculine",
+        "gender": "masculine",
         "words": ["amicus", "amici", "amico", "amicum", "amico"]
+      },
+      "Friends": {
+        "declension": "2",
+        "gender": "masculine",
+        "words": ["amici", "amicorum", "amicis", "amicos", "amicis"]
+      },
+      "Boy": {
+        "declension": "2",
+        "gender": "masculine",
+        "words": ["puer", "pueri", "puero", "puerum", "puero"]
+      },
+      "Boys": {
+        "declension": "2",
+        "gender": "masculine",
+        "words": ["pueri", "puerorum", "pueris", "pueros", "pueris"]
+      },
+      "Field": {
+        "declension": "2",
+        "gender": "masculine",
+        "words": ["ager", "agri", "agro", "agrum", "agro"]
+      },
+      "Fields": {
+        "declension": "2",
+        "gender": "masculine",
+        "words": ["agri", "agrorum", "agris", "agros", "agris"]
+      },
+      "Gift": {
+        "declension": "2",
+        "gender": "neuter",
+        "words": ["donum", "doni", "dono", "donum", "dono"]
+      },
+      "Gifts": {
+        "declension": "2",
+        "gender": "neuter",
+        "words": ["dona", "donorum", "donis", "dona", "donis"]
+      },
+      "King": {
+        "declension": "3",
+        "gender": "masculine",
+        "words": ["rex", "regis", "regi", "regem", "rege"]
+      },
+      "Kings": {
+        "declension": "3",
+        "gender": "masculine",
+        "words": ["reges", "regum", "regibus", "reges", "regibus"]
+      },
+      "Body": {
+        "declension": "3",
+        "gender": "neuter",
+        "words": ["corpus", "corporis", "corpori", "corpus", "corpore"]
+      },
+      "Bodies": {
+        "declension": "3",
+        "gender": "neuter",
+        "words": ["corpora", "corporum", "corporibus", "corpora", "corporibus"]
+      },
+      "Citizen": {
+        "declension": "3",
+        "gender": "masculine",
+        "words": ["civis", "civis", "civi", "civem", "cive"]
+      },
+      "Citizens": {
+        "declension": "3",
+        "gender": "masculine",
+        "words": ["cives", "civium", "civibus", "cives", "civibus"]
+      },
+      "City": {
+        "declension": "3",
+        "gender": "feminine",
+        "words": ["cives", "civium", "civibus", "cives", "civibus"]
+      },
+      "Cities": {
+        "declension": "3",
+        "gender": "feminine",
+        "words": ["cives", "civium", "civibus", "cives", "civibus"]
+      },
+      "Sea": {
+        "declension": "3",
+        "gender": "neuter",
+        "words": ["mare", "maris", "mari", "mare", "mari"]
+      },
+      "Seas": {
+        "declension": "3",
+        "gender": "neuter",
+        "words": ["maria", "marium", "maribus", "maria", "maribus"]
+      },
+      "Fruit": {
+        "declension": "4",
+        "gender": "masculine",
+        "words": ["fructus", "fructus", "fructui", "fructum", "fructu"]
+      },
+      "Fruits": {
+        "declension": "4",
+        "gender": "masculine",
+        "words": ["fructus", "fructuum", "fructibus", "fructus", "fructibus"]
+      },
+      "Horn": {
+        "declension": "4",
+        "gender": "neuter",
+        "words": ["cornu", "cornus", "cornu", "cornu", "cornu"]
+      },
+      "Horns": {
+        "declension": "4",
+        "gender": "neuter",
+        "words": ["cornua", "cornuum", "cornibus", "cornua", "cornibus"]
+      },
+      "Day": {
+        "declension": "5",
+        "gender": "masculine",
+        "words": ["dies", "diei", "diei", "diem", "die"]
+      },
+      "Days": {
+        "declension": "5",
+        "gender": "masculine",
+        "words": ["dies", "dierum", "diebus", "dies", "diebus"]
       }
     }
   }
