@@ -18,6 +18,9 @@ const About = () => {
         <em>Wheelock's latin</em>.
       </p>
 
+      <h3>Source Code for the site</h3>
+      <p><a href = 'https://github.com/g-strick/brute-force-latin'>Brute Force Latin</a></p>
+
     </div>
   );
 };
