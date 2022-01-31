@@ -35,7 +35,7 @@ const NavBar = (props) => {
               <NavLink href="/contact/">Contact</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>Sapere aude</NavbarText>
+          <NavbarText><a href = 'http://www.columbia.edu/acis/ets/CCREAD/etscc/kant.html'>Sapere aude</a></NavbarText>
         </Collapse>
       </Navbar>
     </>
