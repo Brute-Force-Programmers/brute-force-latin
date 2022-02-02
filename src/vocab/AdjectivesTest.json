@@ -1,8 +1,16 @@
 {
   "adjectives": {
     "largeMS": {
+      "word": "Large",
+      "declensions": ["magnus", "magni", "magno", "magnum", "magno"],
+      "sectionTitle": "First and Second Declensions",
+      "gender": "Masculine",
+      "pluralOrSingular": "Singular",
+      "endingOrComparatives": ""
+    },
+    "largeMP": {
       "word": "large",
-      "singular": ["magnus", "magni", "magno", "magnum", "magno"],
+      "declensions": ["magnus", "magni", "magno", "magnum", "magno"],
       "sectionTitle": "First and Second Declensions",
       "gender": "Masculine",
       "pluralOrSingular": "singular",

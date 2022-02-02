@@ -9,11 +9,13 @@ const UserQuizInput = (props) => {
       <h3>{props.declension}</h3>
       <InputGroup>
         <InputGroupAddon addonType="prepend">
-          <InputGroupText>{props.word}</InputGroupText>
+          <InputGroupText>{props.word +' ('+ props.gender +', ' + props.pluralOrSingular + ')'}</InputGroupText>
         </InputGroupAddon>
         <Input placeholder={props.answer} />
       </InputGroup>
     </div>
+
+    
   );
 };
 
