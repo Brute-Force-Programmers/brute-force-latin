@@ -1,18 +1,22 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import UserQuizInput from "../components/UserQuizInput";
-import nouns from "../vocab/nouns"
+
+
+const readJSON = require('../vocab/AdjectivesTest.json')
 
 const Learn = (props) => {
-    console.log(nouns);
+  
   return (
     <div>
-      <NavBar />
+      <NavBar />)
       <UserQuizInput
-        type="nouns"
-        declension="First Declension"
-        word="Gate (feminine)"
-        answer="porta portae portae portam porta"
+        type={Object.keys(readJSON)}
+        sectionTitle={readJSON.adjectives.largeMS.sectionTitle}
+        word={readJSON.adjectives.word}
+        gender={readJSON.adjectives.largeMS.gender}
+        singular={readJSON.adjectives.largeMS.pluralOrSingular}
+        answer={(readJSON.adjectives.largeMS.answer).join(' ')}
       />
     </div>
   );
