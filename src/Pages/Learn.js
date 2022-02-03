@@ -5,18 +5,23 @@ import UserQuizInput from "../components/UserQuizInput";
 
 const readJSON = require('../vocab/AdjectivesTest.json')
 
+
+
+
 const Learn = (props) => {
   
+
   return (
+    
     <div>
-      <NavBar />)
+      <NavBar />
       <UserQuizInput
-        type={Object.keys(readJSON)}
-        sectionTitle={readJSON.adjectives.largeMS.sectionTitle}
-        word={readJSON.adjectives.word}
-        gender={readJSON.adjectives.largeMS.gender}
-        singular={readJSON.adjectives.largeMS.pluralOrSingular}
-        answer={(readJSON.adjectives.largeMS.answer).join(' ')}
+        type={readJSON.largeMS.category}
+        sectionTitle={readJSON.largeMS.sectionTitle}
+        word={readJSON.largeMS.word}
+        gender={readJSON.largeMS.gender}
+        singular={readJSON.largeMS.pluralOrSingular}
+        answer={(readJSON.largeMS.answer).join(' ')}
       />
     </div>
   );
