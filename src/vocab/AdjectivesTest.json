@@ -1,12 +1,19 @@
 {
-  "adjectives": {
-    "largeMS": {
-      "word": "large",
-      "answer": ["magnus", "magni", "magno", "magnum", "magno"],
-      "sectionTitle": "First and Second Declensions",
-      "gender": "Masculine",
-      "pluralOrSingular": "singular",
-      "endingOrComparatives": ""
-    }
+  "largeMS": {
+    "word": "large",
+    "answer": ["magnus", "magni", "magno", "magnum", "magno"],
+    "sectionTitle": "First and Second Declensions",
+    "gender": "Masculine",
+    "pluralOrSingular": "singular",
+    "endingOrComparatives": "",
+    "category": "Adjectives"
+  },
+  "largePS": {
+    "word": "large2",
+    "answer": ["magnus", "magni", "magno", "magnum", "magno"],
+    "sectionTitle": "First and Second Declensions",
+    "gender": "Masculine",
+    "pluralOrSingular": "singular",
+    "endingOrComparatives": ""
   }
 }
