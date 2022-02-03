@@ -1,6 +1,6 @@
 {
   "largeMS": {
-    "word": "large",
+    "word": "Large",
     "answer": ["magnus", "magni", "magno", "magnum", "magno"],
     "sectionTitle": "First and Second Declensions",
     "gender": "Masculine",
@@ -8,12 +8,44 @@
     "endingOrComparatives": "",
     "category": "Adjectives"
   },
-  "largePS": {
-    "word": "large2",
-    "answer": ["magnus", "magni", "magno", "magnum", "magno"],
+  "largeMP": {
+    "word": "Large",
+    "answer": ["magni", "magnorum", "magnis", "magnos", "magnis"],
     "sectionTitle": "First and Second Declensions",
     "gender": "Masculine",
+    "pluralOrSingular": "plural",
+    "endingOrComparatives": ""
+  },
+  "largeFS": {
+    "word": "Large",
+    "answer": ["manga", "magnae", "magnae", "magnam", "magna"],
+    "sectionTitle": "First and Second Declensions",
+    "gender": "Feminine",
     "pluralOrSingular": "singular",
+    "endingOrComparatives": ""
+  },
+  "largeFP": {
+    "word": "Large",
+    "answer": ["magnae", "magnarum", "magnis", "magnas", "magnis"],
+    "sectionTitle": "First and Second Declensions",
+    "gender": "Feminine",
+    "pluralOrSingular": "plural",
+    "endingOrComparatives": ""
+  },
+  "largeNS": {
+    "word": "Large",
+    "answer": ["magnum", "magni", "magno", "magnum", "magno"],
+    "sectionTitle": "First and Second Declensions",
+    "gender": "Neuter",
+    "pluralOrSingular": "singular",
+    "endingOrComparatives": ""
+  },
+  "largeNP": {
+    "word": "Large",
+    "answer": ["magna", "magnorum", "magnis", "magna", "magnis"],
+    "sectionTitle": "First and Second Declensions",
+    "gender": "Neuter",
+    "pluralOrSingular": "plural",
     "endingOrComparatives": ""
   }
 }
