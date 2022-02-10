@@ -13,7 +13,7 @@ const handleSubmitButton = () => {
 // if TRUE 
   // i++ (move to next vocab word)
 // if FALSE
-  // turn background of <InputGroupText> RED (second phase - until user inputs or backspaces)
+  // turn background of <Input> RED (second phase - until user inputs or backspaces)
 };
 
 
@@ -34,7 +34,6 @@ const UserQuizInput = (props) => {
         {/* use  https://6-4-0--reactstrap.netlify.app
         The naming convention between the two is very*/}
 
-        {/* add onclick event -  onClick={this.submitAnswer} */}
         <Button color="primary" onClick={handleSubmitButton}>Submit</Button>
       </InputGroup>
     </div>
