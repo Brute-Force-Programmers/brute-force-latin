@@ -4,7 +4,6 @@ import {
   InputGroupAddon,
   InputGroupText,
   Input,
-  SubmitButton,
 } from "reactstrap";
 
 
@@ -21,7 +20,6 @@ const UserQuizInput = (props) => {
         </InputGroupAddon>
         <Input placeholder={props.answer} />
       </InputGroup>
-      <SubmitButton style={{ marginTop: "10px", }}></SubmitButton>
     </div>
   );
 };

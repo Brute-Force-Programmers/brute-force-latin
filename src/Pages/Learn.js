@@ -1,9 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import UserQuizInput from "../components/UserQuizInput";
-import SubmitButton from "../components/SubmitButton";
-import {Button, Form, FormGroup, Label, Input, FormText, Col, Row, Card, CardBody, Table, CardHeader,
-  InputGroup, InputGroupAddon, InputGroupText,} from 'reactstrap';
+
 
 // read JSON info into object form
 const readJSON = require('../vocab/AdjectivesTest.json')
