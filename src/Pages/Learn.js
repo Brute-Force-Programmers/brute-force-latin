@@ -29,8 +29,7 @@ const Learn = (props) => {
         gender={currGender}
         singular={currSingPlur}
         answer={currAnswer}
-      />
-     
+        />
     </div>
 
   );
