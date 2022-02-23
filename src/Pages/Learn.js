@@ -18,6 +18,7 @@ let currSingPlur = readJSON[mainKeys[i]].pluralOrSingular;
 let currAnswer = readJSON[mainKeys[i]].answer.join(' ');
 
 const Learn = (props) => {
+  // console.log(UserQuizInput.json)
   return (
     
     <div>
@@ -29,6 +30,7 @@ const Learn = (props) => {
         gender={currGender}
         singular={currSingPlur}
         answer={currAnswer}
+        json = {readJSON}
         />
     </div>
 
