@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";
 
+// function to compare user input vs expected answer
+
 const UserQuizInput = (props) => {
   //bringing in the JSON
   const theJSON = props.json
   const mainKeys = Object.keys(theJSON);
-
-
+  
   // Including states for the quiz
   const [inputValues, setInputValue] = useState(null);
   const [isAnswered, setIsAnswered] = useState("Submit");
   const [count, setCount] = useState(1);
+  const [rightCount, setRight] = useState(0);
+  const [wrongCount, setWrong] = useState(0);
   const [section, setSection] = useState(theJSON[mainKeys[count]].category);
   const [type, setType] = useState(theJSON[mainKeys[count]].sectionTitle);
   const [word, setWord] = useState(theJSON[mainKeys[count]].word);
@@ -19,44 +22,42 @@ const UserQuizInput = (props) => {
   const [answer, setAnswer] = useState(theJSON[mainKeys[count]].answer.join(' '));
   console.log(section, type, word, gender, singularPlural, answer)
 
-
-
-  
-  // let i = 1;
-  // integer indices will not work, so keys are used to access data
-  // let currType = theJSON[mainKeys[count]].category;
-  // let currSection = theJSON[mainKeys[count]].sectionTitle;
-  // let currWord = theJSON[mainKeys[count]].word;
-  // let currGender = theJSON[mainKeys[count]].gender;
-  // let currSingPlur = theJSON[mainKeys[count]].pluralOrSingular;
-  // let currAnswer = theJSON[mainKeys[count]].answer.join(' ');
-
-  
-
+  // update the inputValue when user types in Input box
   const onChange = (event) => {
     setInputValue(event.target.value);
   };
   // Function to capture values from user input and print to console
-  
   const handleSubmit = (event, inputValues, isAnswered, count) => {
-    if (isAnswered == "Submit") {
+    if (isAnswered === "Submit") {
+      answerComparison(answer, inputValues)
       setIsAnswered("Next Word");
     } else {
       setIsAnswered("Submit");
-      setInputValue(null);
-      setCount(count + 1);
-      setSection(theJSON[mainKeys[count]].category);
-      setType(theJSON[mainKeys[count]].sectionTitle);
-      setWord(theJSON[mainKeys[count]].word);
-      setGender(theJSON[mainKeys[count]].gender);
-      setSingularPlural(theJSON[mainKeys[count]].pluralOrSingular);
-      setAnswer(theJSON[mainKeys[count]].answer.join(' '));
+      updateStates();
     }
-    console.log(inputValues, isAnswered, count);
     console.log(section, type, word, gender, singularPlural, answer)
-    // console.log(currType, currSection, currWord, currGender, currSingPlur, currAnswer)
     event.preventDefault();
   };
+  
+  // function to compare user input vs expected answer and track number of correct/incorrect submissions
+  const answerComparison = (expectedAnswer, userSubmission) => {
+    if (expectedAnswer === userSubmission) {
+      setRight(rightCount + 1)
+    }
+    else {setWrong(wrongCount + 1)}
+  }
+  // consolidated JSON-related state updates into a single function
+  const updateStates = () => {
+    setInputValue(null);
+    setCount(count + 1);
+    setSection(theJSON[mainKeys[count]].category);
+    setType(theJSON[mainKeys[count]].sectionTitle);
+    setWord(theJSON[mainKeys[count]].word);
+    setGender(theJSON[mainKeys[count]].gender);
+    setSingularPlural(theJSON[mainKeys[count]].pluralOrSingular);
+    setAnswer(theJSON[mainKeys[count]].answer.join(' '));
+  }
+
   return (
     <div>
       <h1> {type} </h1>
@@ -65,13 +66,11 @@ const UserQuizInput = (props) => {
       <InputGroup onChange={(event) => onChange(event)}>
         <InputGroupAddon addonType="prepend">
           <InputGroupText>
-            {/* {props.word} {" (" + props.gender + " "} {"" + props.singular + ")"} */}
             {word} {" (" + gender + " "} {"" + singularPlural + ")"}
-
           </InputGroupText>
         </InputGroupAddon>
         <Input placeholder={answer} value={inputValues} type="text" />
-        {/* Included onclick event to console log answer submission */}
+        {/* Included onclick event to capture answer submission */}
         <Input
           type="submit"
           onClick={(event) => handleSubmit(event, inputValues, isAnswered, count)
@@ -84,6 +83,8 @@ const UserQuizInput = (props) => {
       <p>InputValue: {inputValues}</p>
       <p>IsAnsered:{isAnswered}</p>
       <p>Count:{count}</p>
+      <p>Right:{rightCount}</p>
+      <p>Wrong:{wrongCount}</p>
     </div>
   );
 };
