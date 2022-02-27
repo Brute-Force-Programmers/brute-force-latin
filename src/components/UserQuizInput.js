@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { InputGroup, InputGroupAddon, InputGroupText, Input , FormFeedback, FormGroup, Form} from "reactstrap";
+import Toast from './Toast';
 
 // function to compare user input vs expected answer
 const UserQuizInput = (props) => {
@@ -24,6 +25,9 @@ const UserQuizInput = (props) => {
     theJSON[mainKeys[count]].answer.join(" ")
   );
   const [inputValid, setInputValid] = useState(null)
+  // states for Toast notification
+  const [list, setList] = useState([]);
+  let toastProperties = null;
   // console.log(section, type, word, gender, singularPlural, answer);
 
   // update the inputValue when user types in Input box
@@ -33,13 +37,10 @@ const UserQuizInput = (props) => {
   // Function to capture values from user input and print to console
   const handleSubmit = (event, inputValues, isAnswered, count) => {
     if (answerComparison(answer, inputValues)) {
-      
-      // setIsAnswered("Next Word");
+      showToast('success')
       updateStates()
     } else {
-      // setIsAnswered("Submit");
-      // updateStates();
-      alert("Wrong!")
+      showToast('failure')
     }
     console.log(section, type, word, gender, singularPlural, answer);
     event.preventDefault();
@@ -59,7 +60,7 @@ const UserQuizInput = (props) => {
   // consolidated JSON-related state updates into a single function
   const updateStates = () => {
     setInputValue(null);
-    // setCount(count + 1);
+    setCount(count + 1);
     setSection(theJSON[mainKeys[count]].category);
     setType(theJSON[mainKeys[count]].sectionTitle);
     setWord(theJSON[mainKeys[count]].word);
@@ -69,6 +70,37 @@ const UserQuizInput = (props) => {
     setInputValid(false)
     console.log(inputValid)
   };
+
+  // Function to show toast notification
+  const showToast = (type) => {
+    const id = Math.floor((Math.random() * 101) + 1);
+
+    switch(type) {
+      case 'success':
+        toastProperties = {
+          id,
+          title: 'Success!',
+          description: 'You are worthy of the next word',
+          backgroundColor: '#5cb85c',
+          // icon: checkIcon
+        }
+        break;
+      case 'failure':
+        toastProperties = {
+          id,
+          title: 'Wrong!',
+          description: 'Input the correct answer to advance',
+          backgroundColor: '#d9534f',
+          // icon: errorIcon
+        }
+        break;
+        default:
+          setList([]);
+    }
+
+    setList([...list, toastProperties]);
+  }
+  
 
   return (
     <div>
@@ -106,7 +138,12 @@ const UserQuizInput = (props) => {
       <p>Count:{count}</p>
       <p>Right:{rightCount}</p>
       <p>Wrong:{wrongCount}</p>
-
+      
+      {/* Toast notification component */}
+      <Toast 
+        toastList={list}
+        position="bottom-right"
+      />
 
     </div>
   );
