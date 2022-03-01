@@ -18,6 +18,14 @@
 	transition: transform .6s ease-in-out;
 	animation: toast-in-right .7s;
 }
+
+
+.bottom-center {
+	bottom: 12px;
+	right: 33%;
+	/* transition: transform .6s ease-in-out; */
+	animation: toast-in-bottom .7s;
+}
 /* 
 .top-left {
 	top: 12px;
@@ -132,5 +140,16 @@
 	}
 	to {
 		transform: translateX(0);
+	}
+}
+
+
+@keyframes toast-in-bottom {
+	from {
+		transform: translateY(12px);
+		
+	}
+	to {
+		transform: translateY(-100%);
 	}
 }

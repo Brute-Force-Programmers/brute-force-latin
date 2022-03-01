@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { InputGroup, InputGroupAddon, InputGroupText, Input , FormFeedback, FormGroup, Form} from "reactstrap";
+import { InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";
 import Toast from './Toast';
 
 // function to compare user input vs expected answer
@@ -107,10 +107,6 @@ const UserQuizInput = (props) => {
       <h1> {type} </h1>
       <h3> {section} </h3>
       {/* Included onChange event to update the answerValue state when user types into the input */}
-      <Form>
-
-      <FormGroup>
-
 
       <InputGroup onChange={(event) => onChange(event)}>
         <InputGroupAddon addonType="prepend">
@@ -128,10 +124,8 @@ const UserQuizInput = (props) => {
             handleSubmit(event, inputValues, count)
           }
         />
-        <FormFeedback invalid>This bollocks is not showing!!!!</FormFeedback>
       </InputGroup>
-      </FormGroup>
-      </Form>
+
 
       {/* Showing quiz states for simplicity */}
       <p>InputValue: {inputValues}</p>
@@ -142,6 +136,8 @@ const UserQuizInput = (props) => {
       {/* Toast notification component */}
       <Toast 
         toastList={list}
+        dismissTime = {2000}
+        autoDelete = {true}
         position="bottom-right"
       />
 
