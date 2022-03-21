@@ -14,7 +14,8 @@
     "sectionTitle": "First and Second Declensions",
     "gender": "Masculine",
     "pluralOrSingular": "plural",
-    "endingOrComparatives": ""
+    "endingOrComparatives": "",
+    "category": "Adjectives"
   },
   "largeFS": {
     "word": "Large",
@@ -22,7 +23,8 @@
     "sectionTitle": "First and Second Declensions",
     "gender": "Feminine",
     "pluralOrSingular": "singular",
-    "endingOrComparatives": ""
+    "endingOrComparatives": "",
+    "category": "Adjectives"
   },
   "largeFP": {
     "word": "Large",
@@ -30,7 +32,8 @@
     "sectionTitle": "First and Second Declensions",
     "gender": "Feminine",
     "pluralOrSingular": "plural",
-    "endingOrComparatives": ""
+    "endingOrComparatives": "",
+    "category": "Adjectives"
   },
   "largeNS": {
     "word": "Large",
@@ -38,7 +41,8 @@
     "sectionTitle": "First and Second Declensions",
     "gender": "Neuter",
     "pluralOrSingular": "singular",
-    "endingOrComparatives": ""
+    "endingOrComparatives": "",
+    "category": "Adjectives"
   },
   "largeNP": {
     "word": "Large",
@@ -46,6 +50,7 @@
     "sectionTitle": "First and Second Declensions",
     "gender": "Neuter",
     "pluralOrSingular": "plural",
-    "endingOrComparatives": ""
+    "endingOrComparatives": "",
+    "category": "Adjectives"
   }
 }
